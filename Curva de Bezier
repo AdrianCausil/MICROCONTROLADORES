@@ -91,3 +91,4 @@ plt.title('Gráficas de Bx1, By1 y Bx2, By2')
 plt.legend()
 plt.grid(True)
 plt.show()
+
