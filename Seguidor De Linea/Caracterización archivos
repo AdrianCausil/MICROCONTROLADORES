@@ -1,0 +1,21 @@
+Los archivos presentados en este github corresponden al carro seguidor de línea con red neuronal 
+desarrollada para la materia de diseño digital con microcontroladores.
+
+Main.py
+	En este archivo podemos encontrar la red neuronal con sus dos opciones manejadas por un pin en pull up,
+donde se tiene el entrenamiento y la red funcionando por aparte según se necesite.
+
+Code.py
+	Podemos obtener en este archivo desarrollado en circuitpython el manejo de la cámara Ov7670, 
+junto con la pantalla de tecnología SPI, además del cálculo de la desviación del carro con respecto a la línea que debe seguir
+
+L298N_motor.py
+	En este código podemos obtener una pequeña librería obtenida desde los recursos del MIT donde se facilita el control
+de los motores desde la ampliación o disminución de el ancho de pulso en el DAC, que se asigna en el código principal del carro.
+
+Con_imagen.py
+	Es una modificación del code.py que permite mostrar más información en la pantalla SPI, con la desventaja que afecta
+directamente este mejoramiento de imagen a la velocidad de transmisión por UART debido al delay que maneja la pantalla.
+
+m.TXT
+	El archivo de texto m guarda el entrenamiento con el que se desarrollo el correcto recorrido en la pista propuesta para la materia.
